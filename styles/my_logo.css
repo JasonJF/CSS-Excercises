@@ -1,0 +1,51 @@
+body{
+  background-color: ivory;
+  font-family: Calibri;
+  font-size: 5em;
+}
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: green; */
+  height: 90vh;
+/*   border-radius: 10px; */
+}
+#logoWrapper{
+  display: flex;
+  flex-direction: row;
+}
+@keyframes movetext {
+  0%{left: -400px;}
+  100% {left: 0px;}
+}
+#txtBox {
+  display: flex;
+  position: relative;
+  height: 250px;
+  width: 400px;
+  top: 0;
+  left: -400px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 15px;
+  background-color: ivory;
+  z-index: 1;
+  animation-name: movetext;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  /* border-radius: 10px; */
+}
+#txtBox:after{
+  left: -30px;
+}
+#centerline {
+  position: relative;
+  height: 280px;
+  width: 380px;
+  background-color: ivory;
+  border-right: 10px solid red;
+  z-index: 2;
+}
