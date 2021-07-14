@@ -45,7 +45,7 @@ body{
   font-family: 'Bebas Neue', cursive;
   font-size: 7em;
   position: relative;
-  height: 280px;
+  height: 100%;
   width: 320px;
   top: 0;
   /* left: -380px; */
@@ -60,6 +60,8 @@ body{
   display: flex;
   flex-direction: column;
   position: relative;
+  top: 0;
+  justify-content: flex-start;
   animation-name: movetext;
   animation-duration: 1s;
   animation-timing-function: ease-in;
@@ -81,14 +83,15 @@ body{
 .logoText{
   display: flex;
   position: relative;
-  height: auto;
+  /* height: 100px; */
   /* padding: 1px; */
-  /* margin-top: -40px; */
+  margin-top: -26px;
+  margin-bottom: -23px;
   /* margin-bottom: 30px; */
 }
 .centerline {
   position: absolute;
-  height: 280px;
+  height: 197px;
   width: 480px;
   background-color: ivory;
   border-right: 10px solid red;
@@ -107,6 +110,7 @@ body{
   flex-direction: column;
   position: relative;
   align-items: flex-end;
+  margin-top: 9px;
   justify-content: flex-start;
   padding-right: 10px;
   background-color:ivory;
@@ -121,7 +125,7 @@ body{
   
 }
 .skillsText{
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   font-size: 2em;
   padding: 4px;
 }
