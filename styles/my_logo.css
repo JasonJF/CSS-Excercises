@@ -36,7 +36,7 @@ body{
 }
 @keyframes scaleCenterLine{
   0%{width: 400px;}
-  100%{width: 20px;}
+  100%{width: 0px;}
 }
 .txtBoxWrapper {
   display: flex;
@@ -63,7 +63,7 @@ body{
   top: 0;
   justify-content: flex-start;
   animation-name: movetext;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
   /* border: solid 5px black; */
@@ -98,24 +98,26 @@ body{
   /* border: 10px solid red; */
   z-index: 5;
   animation-name: scaleCenterLine;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
+  /* animation-iteration-count: infinite; */
 }
-.centerline:after{
-  width: 50px;
-}
+
 .leftTextWrapper{
   display: flex;
   flex-direction: column;
   position: relative;
+  left: 180px;
   align-items: flex-end;
   margin-top: 9px;
   justify-content: flex-start;
   padding-right: 10px;
   background-color:ivory;
-  animation-name: moveTextLeft;
+  /* border: solid 5px black; */
+  /* animation-name: moveTextLeft; */
   animation-duration: 1s;
+  animation-delay: 2s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
   z-index: -2;
